@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Karol 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Quicksand',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffd6e7,#ffc0cb,#f7d6ff);
+    min-height:100vh;
+    overflow-x:hidden;
+    color:#ff4f9d;
+}
+
+.corazon{
+    position:fixed;
+    font-size:25px;
+    animation:subir 10s linear infinite;
+    z-index:0;
+}
+
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.avatar{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 0 30px rgba(255,255,255,.8);
+}
+
+h1{
+    margin-top:20px;
+    font-size:3rem;
+}
+
+.subtitulo{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+section{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    margin-bottom:40px;
+    background:rgba(255,255,255,.35);
+    backdrop-filter:blur(10px);
+    border-radius:30px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(255,105,180,.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    max-width:350px;
+    margin:10px auto;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    color:#ff4f9d;
+    background:white;
+    border-radius:25px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.carta{
+    display:none;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    color:#555;
+    line-height:1.8;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.08);
+}
+
+.sorpresa{
+    text-align:center;
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+.boton{
+    background:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:25px;
+    color:#ff4f9d;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio id="musica" loop>
+    <source src="music/Yo siempre contesto  Latin Mafia (Lyrics).mp3" type="audio/mpeg">
+</audio>
+
+<header>
+
+<img src="img/karol.jpg" class="avatar">
+
+<h1>Karol 💖</h1>
+
+<p class="subtitulo">
+La mejor amiga del universo ✨🌸
+</p>
+
+<button class="boton" onclick="toggleMusic()">
+🎵 Reproducir / Pausar Música
+</button>
+
+</header>
+
+<section>
+
+<h2>💌 Carta Especial</h2>
+
+<button class="boton" onclick="mostrarCarta()">
+Abrir Carta 💖
+</button>
+
+<div class="carta" id="carta">
+
+Hola Lobita 💕
+
+Te escribo esto solo para agradecerte por cada risa, cada conversación y cada recuerdo compartido.
+
+Tu amistad ha hecho muchos momentos más felices y especiales.
+
+y que los dificiles sean más llevaderos,
+
+Quiero que nunca dudes de que eres una persona increíble, amorosa y única.
+
+Espero que sigamos creando recuerdos juntas por muchos años más.
+
+Nunca olvides lo importante que eres.
+
+Te amo muchisimo🌸💖
+
+</div>
+
+</section>
+
+<section>
+
+<h2>📸 Nuestros Recuerdos</h2>
+
+<div class="galeria">
+
+<img src="img/foto1.jpg">
+<img src="img/foto2.webp">
+<img src="img/foto3.jpg">
+<img src="img/foto4.jfif">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🎀</h2>
+
+<a class="btn" href="https://i.pinimg.com/webp/736x/62/c3/c6/62c3c6df868ca919ffe323eb4b97c1ad.webp" target="_blank">
+🌷 
+</a>
+
+<a class="btn" href="https://i.pinimg.com/webp/1200x/74/a6/8b/74a68b942f6395e732fb1749ec1bddd8.webp" target="_blank">
+🎀
+</a>
+
+<a class="btn" href="https://i.pinimg.com/webp/1200x/7c/2a/3e/7c2a3e500b4fc59424aeb199c71d4d42.webp" target="_blank">
+💗
+</a>
+
+<a class="btn" href="https://i.pinimg.com/736x/1f/8e/85/1f8e85e84f99c6aca6024a07b0e26143.jpg" target="_blank">
+✨
+</a>
+
+</section>
+
+<section>
+
+<h2>🎁 Sorpresa</h2>
+
+<div style="text-align:center;">
+<button class="boton" onclick="mensajeRandom()">
+Mostrar Mensaje ✨
+</button>
+
+<div class="sorpresa" id="mensaje"></div>
+</div>
+
+</section>
+
+<footer>
+
+<p>🌸 Hecho mucho amor para  mi amorcita Karol 💖 🌸</p>
+
+</footer>
+
+<script>
+
+function mostrarCarta(){
+    const carta=document.getElementById("carta");
+
+    if(carta.style.display==="block"){
+        carta.style.display="none";
+    }else{
+        carta.style.display="block";
+    }
+}
+
+function toggleMusic(){
+    const musica=document.getElementById("musica");
+
+    if(musica.paused){
+        musica.play();
+    }else{
+        musica.pause();
+    }
+}
+
+const mensajes=[
+"💖 Eres una amiga increíble.",
+"🌸 Gracias por estar siempre para mi.",
+"✨ Nunca cambies.",
+"🩷 Tu amistad vale muchísimo.",
+"🎀 Te amo Lobita.",
+"💕 Gracias por tantas risas."
+];
+
+function mensajeRandom(){
+    document.getElementById("mensaje").innerHTML =
+    mensajes[Math.floor(Math.random()*mensajes.length)];
+}
+
+function crearCorazon(){
+
+    const corazon=document.createElement("div");
+
+    corazon.classList.add("corazon");
+
+    corazon.innerHTML="💖";
+
+    corazon.style.left=Math.random()*100+"vw";
+
+    corazon.style.fontSize=(20+Math.random()*25)+"px";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(()=>{
+        corazon.remove();
+    },10000);
+}
+
+setInterval(crearCorazon,500);
+
+</script>
+
+</body>
+</html>
